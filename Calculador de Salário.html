@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Define o título da página -->
+    <title>Calculador de Salário</title>
+</head>
+<body>
+    <!-- Formulário para calcular o salário -->
+    <form id="formSalario">
+        <!-- Campo para selecionar o cargo -->
+        <label for="cargo">Cargo:</label>
+        <select id="cargo">
+            <option value="diretor">Diretor</option>
+            <option value="secretario">Secretário</option>
+            <option value="operador">Operador</option>
+        </select>
+        <!-- Campo para inserir o salário base -->
+        <label for="salarioBase">Salário Base:</label>
+        <input type="number" id="salarioBase">
+        <!-- Botão para acionar o cálculo do salário -->
+        <button type="button" onclick="calcularSalario()">Calcular</button>
+    </form>
+    <!-- Parágrafo onde o resultado será exibido -->
+    <p id="resultado"></p>
+
+    <!-- Inclusão do arquivo JavaScript que contém a função calcularSalario -->
+    <script src="script.js"></script>
+</body>
+</html>
